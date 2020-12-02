@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+.material-icons {
+  font-size: 16px;
+}
+
+.datatable-container {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #2a3338;
+  border-radius: 3px;
+  color: #fff;
+  width: 600px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+.datatable-container .header-tools {
+  border-bottom: solid 1px #3d4449;
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.datatable-container .header-tools .search {
+  width: 30%;
+}
+
+.datatable-container .header-tools .search-input {
+  width: 100%;
+  background-color: #3d4449;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  border: solid 1px #3d4449;
+  color: #fff;
+}
+
+.datatable-container .header-tools .tools {
+  width: 70%;
+}
+
+.datatable-container .header-tools .tools ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.datatable-container .header-tools .tools ul li {
+  display: inline-block;
+  margin: 0 2px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.datatable-container .footer-tools {
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.datatable-container .footer-tools .list-items {
+  width: 50%;
+}
+
+.datatable-container .footer-tools .pages {
+  margin-left: auto;
+  margin-right: 0;
+  width: 50%;
+}
+
+.datatable-container .footer-tools .pages ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.datatable-container .footer-tools .pages ul li {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.datatable-container .footer-tools .pages ul li span.active {
+  background-color: #3282b8;
+  border-radius: 3px;
+}
+
+.datatable-container .header-tools .tools ul li button,
+.datatable-container .footer-tools .pages ul li button {
+  color: #fff;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.datatable-container .header-tools .tools ul li button:hover,
+.datatable-container .footer-tools .pages ul li button:hover {
+  background-color: #3282b8;
+  color: #fff;
+}
+
+.datatable-container .header-tools .tools ul li span,
+.datatable-container .footer-tools .pages ul li span {
+  padding: 6px 12px;
+}
+
+.datatable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.datatable th,
+.datatable td {
+  padding: 12px;
+}
+
+.datatable td {
+  border-bottom: solid 1px #3d4449;
+}
+
+.datatable tbody tr:nth-child(even) {
+  background-color: #3d4449;
+}
+/*# sourceMappingURL=style.css.map */

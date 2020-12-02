@@ -1,0 +1,35 @@
+.datatable {
+  border-collapse: collapse;
+  width: 100%;
+
+  td {
+    border-bottom: solid 1px $dt-border-color;
+  }
+
+  th,
+  td {
+    padding: $dt-padding;
+  }
+}
+
+.datatable-container .datatable {
+  th {
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: solid 1px red;
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      background-color: $dt-even-row-color;
+    }
+
+    tr:hover {
+      background-color: &dt-hover-cell-color;
+    }
+  }
+}
+
+body {
+  background: red;
+}

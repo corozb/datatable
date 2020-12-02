@@ -1,0 +1,111 @@
+.material-icons {
+  font-size: 16px;
+}
+
+.datatable-container {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: $dt-background-color-container;
+  border-radius: $dt-border-radius;
+  color: $dt-text-color;
+  width: 600px;
+  margin: 0 auto;
+  font-size: 12px;
+
+  .header-tools {
+    border-bottom: solid 1px $dt-border-color;
+    padding: $dt-padding;
+    display: flex;
+    align-items: baseline;
+
+    .search {
+      width: 30%;
+
+      &-input {
+        width: 100%;
+        background-color: $dt-input-background-color;
+        display: block;
+        box-sizing: border-box;
+        border-radius: $dt-border-radius;
+        border: solid 1px $dt-border-color;
+        color: $dt-input-color;
+      }
+    }
+
+    .tools {
+      width: 70%;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: start;
+        align-items: baseline;
+
+        li {
+          display: inline-block;
+          margin: 0 $dt-padding-xs;
+          align-items: baseline;
+        }
+      }
+    }
+  }
+
+  .footer-tools {
+    padding: $dt-padding;
+    display: flex;
+    align-items: baseline;
+
+    .list-items {
+      width: 50%;
+    }
+
+    .pages {
+      margin-left: auto;
+      margin-right: 0;
+      width: 50%;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-end;
+
+        li {
+          display: inline-block;
+          margin: 0 $dt-padding-xs;
+
+          span.active {
+            background-color: $dt-bg-color;
+            border-radius: $dt-border-radius;
+          }
+        }
+      }
+    }
+  }
+
+  .header-tools .tools,
+  .footer-tools .pages {
+    ul li {
+      button {
+        color: $dt-text-color-button;
+        width: 100%;
+        box-sizing: border-box;
+        border: 0;
+        border-radius: $dt-border-radius;
+        background: transparent;
+        padding: $dt-padding-s $dt-padding;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $dt-bg-color;
+          color: $dt-text-color-active-button;
+        }
+      }
+
+      span {
+        padding: $dt-padding-s $dt-padding;
+      }
+    }
+  }
+}

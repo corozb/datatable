@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+$primary-color: #fff;
+$secondary-color: rgb(61, 68, 73);
+$highlight-color: #3282b8;
+
+$dt-status-available-color: greenyellow;
+$dt-status-away-color: lightsalmon;
+$dt-status-offline-color: lightgray;
+
+$dt-padding: 12px;
+$dt-padding-s: 6px;
+$dt-padding-xs: 2px;
+
+$dt-border-radius: 3px;
+
+$dt-background-color-container: #2a3338;
+$dt-border-color: $secondary-color;
+$dt-bg-color: $highlight-color;
+$dt-text-color: $primary-color;
+$dt-bg-active-button: $highlight-color;
+$dt-text-color-button: $primary-color;
+$dt-text-color-active-button: $primary-color;
+$dt-hover-cell-color: $highlight-color;
+$dt-even-row-color: $secondary-color;
+$dt-focus-color: $highlight-color;
+$dt-input-background-color: $secondary-color;
+$dt-input-color: $primary-color;
