@@ -138,16 +138,76 @@
   width: 100%;
 }
 
+.datatable td {
+  border-bottom: solid 1px #3d4449;
+}
+
 .datatable th,
 .datatable td {
   padding: 12px;
 }
 
-.datatable td {
+.datatable-container .datatable th {
+  font-weight: bolder;
+  text-align: left;
   border-bottom: solid 1px #3d4449;
 }
 
-.datatable tbody tr:nth-child(even) {
+.datatable-container .datatable td {
+  border-bottom: solid 1px #3d4449;
+}
+
+.datatable-container .datatable tbody tr:nth-child(even) {
   background-color: #3d4449;
+}
+
+.datatable-container .datatable tbody tr:hover {
+  background-color: #3282b8;
+}
+
+.datatable-container .datatable tbody tr .available::after,
+.datatable-container .datatable tbody tr .await::after,
+.datatable-container .datatable tbody tr .offline::after {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.datatable-container .datatable tbody tr .available::after {
+  content: 'Online';
+  color: greenyellow;
+}
+
+.datatable-container .datatable tbody tr .await::after {
+  content: 'Await';
+  color: lightsalmon;
+}
+
+.datatable-container .datatable tbody tr .offline::after {
+  content: 'Offline';
+  color: lightgray;
+}
+
+.datatable-container .datatable tbody tr .available::before,
+.datatable-container .datatable tbody tr .await::before,
+.datatable-container .datatable tbody tr .offline::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.datatable-container .datatable tbody tr .available::before {
+  background-color: greenyellow;
+}
+
+.datatable-container .datatable tbody tr .await::before {
+  background-color: lightsalmon;
+}
+
+.datatable-container .datatable tbody tr .offline::before {
+  background-color: lightgray;
 }
 /*# sourceMappingURL=style.css.map */

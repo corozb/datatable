@@ -16,20 +16,67 @@
   th {
     font-weight: bolder;
     text-align: left;
-    border-bottom: solid 1px red;
+    border-bottom: solid 1px $dt-border-color;
+  }
+
+  td {
+    border-bottom: solid 1px $dt-border-color;
   }
 
   tbody {
-    tr:nth-child(even) {
-      background-color: $dt-even-row-color;
-    }
+    tr {
+      &:nth-child(even) {
+        background-color: $dt-even-row-color;
+      }
 
-    tr:hover {
-      background-color: &dt-hover-cell-color;
+      &:hover {
+        background-color: $dt-hover-cell-color;
+      }
+
+      .available::after,
+      .await::after,
+      .offline::after {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .available::after {
+        content: 'Online';
+        color: $dt-status-available-color;
+      }
+
+      .await::after {
+        content: 'Await';
+        color: $dt-status-await-color;
+      }
+
+      .offline::after {
+        content: 'Offline';
+        color: $dt-status-offline-color;
+      }
+
+      // circle
+      .available::before,
+      .await::before,
+      .offline::before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+
+      .available::before {
+        background-color: $dt-status-available-color;
+      }
+      .await::before {
+        background-color: $dt-status-await-color;
+      }
+      .offline::before {
+        background-color: $dt-status-offline-color;
+      }
     }
   }
-}
-
-body {
-  background: red;
 }
