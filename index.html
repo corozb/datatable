@@ -60,7 +60,7 @@
           <input type="checkbox" name="" id="">
         </td>
         <td><span class="available"></span></td>
-        <td>Cristian Orozco</td>
+        <td>Lena Sanchez</td>
         <td>CEO</td>
         <td>Medellin</td>
         <td>36</td>
@@ -84,7 +84,7 @@
           <input type="checkbox" name="" id="">
         </td>
         <td><span class="offline"></span></td>
-        <td>Cristian Orozco</td>
+        <td>Luis Miguel</td>
         <td>CEO</td>
         <td>Medellin</td>
         <td>36</td>
@@ -164,6 +164,94 @@
         <td>Cristian Orozco</td>
         <td>CEO</td>
         <td>Medellin</td>
+        <td>36</td>
+        <td>2020/05/01</td>
+      </tr>
+      <tr>
+        <td class="table-checkbox">
+          <input type="checkbox" name="" id="">
+        </td>
+        <td><span class="available"></span></td>
+        <td>Cristian Orozco</td>
+        <td>CEO</td>
+        <td>Medellin</td>
+        <td>36</td>
+        <td>2020/05/01</td>
+      </tr>
+      <tr>
+        <td class="table-checkbox">
+          <input type="checkbox" name="" id="">
+        </td>
+        <td><span class="available"></span></td>
+        <td>Cristian Orozco</td>
+        <td>CEO</td>
+        <td>Medellin</td>
+        <td>36</td>
+        <td>2020/05/01</td>
+      </tr>
+      <tr>
+        <td class="table-checkbox">
+          <input type="checkbox" name="" id="">
+        </td>
+        <td><span class="available"></span></td>
+        <td>Cristian Orozco</td>
+        <td>CEO</td>
+        <td>Medellin</td>
+        <td>36</td>
+        <td>2020/05/01</td>
+      </tr>
+      <tr>
+        <td class="table-checkbox">
+          <input type="checkbox" name="" id="">
+        </td>
+        <td><span class="available"></span></td>
+        <td>Cristian Orozco</td>
+        <td>CEO</td>
+        <td>Medellin</td>
+        <td>36</td>
+        <td>2020/05/01</td>
+      </tr>
+      <tr>
+        <td class="table-checkbox">
+          <input type="checkbox" name="" id="">
+        </td>
+        <td><span class="available"></span></td>
+        <td>Cristian Orozco</td>
+        <td>CEO</td>
+        <td>Medellin</td>
+        <td>36</td>
+        <td>2020/05/01</td>
+      </tr>
+      <tr>
+        <td class="table-checkbox">
+          <input type="checkbox" name="" id="">
+        </td>
+        <td><span class="available"></span></td>
+        <td>Cristian Orozco</td>
+        <td>CEO</td>
+        <td>Medellin</td>
+        <td>36</td>
+        <td>2020/05/01</td>
+      </tr>
+      <tr>
+        <td class="table-checkbox">
+          <input type="checkbox" name="" id="">
+        </td>
+        <td><span class="await"></span></td>
+        <td>Cristian Orozco</td>
+        <td>CEO</td>
+        <td>Medellin</td>
+        <td>36</td>
+        <td>2020/05/01</td>
+      </tr>
+      <tr>
+        <td class="table-checkbox">
+          <input type="checkbox" name="" id="">
+        </td>
+        <td><span class="available"></span></td>
+        <td>Cristian Orozco</td>
+        <td>Web UI Developer</td>
+        <td>Globant</td>
         <td>36</td>
         <td>2020/05/01</td>
       </tr>
@@ -173,7 +261,7 @@
   <!-- <div class="footer-tools">
       <div class="list-items">
         Show
-        <select name="" id="n-enties" class="n-entries">
+        <select name="" id="n-entries" class="n-entries">
           <option value="5">5</option>
           <option value="10" selected>10</option>
           <option value="15">15</option>
@@ -203,9 +291,21 @@
       text: 'add',
       icon: 'add_circle',
       action: function () {
-        // callback
+        // console.log('click add')
+        datatable.add(['available', 'Ana Karenina', 'CTO', 'San Francisco', '28', '2020/12/21'])
       }
-    }])
+    },
+    {
+      id: 'bDelete',
+      text: 'delete',
+      icon: 'delete',
+      action: function () {
+        // console.log('click delete')
+        const elements = datatable.getSelected()
+        console.log(elements)
+      }
+    }
+    ])
 
     datatable.parse()
   </script>
